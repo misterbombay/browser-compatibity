@@ -1,8 +1,350 @@
 <html>
     <head>
+        <title>HTML Browser Compatibility Data</title>
+        <style>
+            body{
+                font-family: roboto;
+            }
+            .bg-color {
+                background-color:#f4f4f4;
+            }
+            td .padding{
+                font-size: 0.9em;
+                padding: 20px;
+            }
+            .bg{
+                background-color: #f1d0e3;
+            }
+            .border{
+                border-right:1px solid #000;
+            }
+            .hgt{
+                height: 200px;
+            }
+            .left-align-txt-header{
+                text-align: left;
+                padding-left: 10px;
+            }
+            .left-align-txt{
+                text-align: left;
+                padding-left: 10px;
+            }
 
+            .left-align-txt::after{
+                background-image: url('https://developer.mozilla.org/static/media/thumbs-down.41ba190c.svg');
+                content: "";
+                vertical-align: middle;
+                background-size: 18px;
+                display: inline-block;
+                height: 18px;
+                line-height: 22;
+                margin-left: 5px;
+                margin-right: 4px;
+                width: 18px;
+            }
+
+            .icon{
+                height: 32px;
+                width:32px;
+            }
+            .rot{
+                transform: rotate(-90deg);
+            }
+            .dep{
+                display: inline-block;
+                margin-left:5px;
+                height:20px;
+                width:20px;
+            }
+        </style>
     </head>
     <body>
-        <h1 style="text-align:center;">Browser Compatibility!!!</h1>
+        <table border="1" style="border:1px solid #000;" cellpadding="0" cellspacing="0" align="center" class="bg-color">
+            <tr>
+                <td width="20%">&nbsp;</td>
+                <td width="40%" align="center"><img src="https://developer.mozilla.org/static/media/desktop.ef3ee89a.svg" width="32px" height="32px" alt="Desktop" title="Mobile"></td>
+                <td width="40%" align="center"><img src="https://developer.mozilla.org/static/media/mobile.70f1afec.svg" width="32px" height="32px" alt="Mobile" title="Mobile"></td>
+            </tr>
+            <tr>
+                <td class="left-align-txt-header">table</td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">12</td>
+                            <td class="padding border">1</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">Yes</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">18</td>
+                            <td class="padding border">4</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">1.0</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left-align-txt">align</td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">12</td>
+                            <td class="padding border">1</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">Yes</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">18</td>
+                            <td class="padding border">4</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">1.0</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left-align-txt">bgcolor</td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">12</td>
+                            <td class="padding border">1</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">Yes</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">18</td>
+                            <td class="padding border">4</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">1.0</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left-align-txt">border</td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">12</td>
+                            <td class="padding border">1</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">Yes</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">18</td>
+                            <td class="padding border">4</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">1.0</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left-align-txt">cellpadding</td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">12</td>
+                            <td class="padding border">1</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">Yes</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">18</td>
+                            <td class="padding border">4</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">1.0</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left-align-txt">cellspacing</td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">12</td>
+                            <td class="padding border">1</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">Yes</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">18</td>
+                            <td class="padding border">4</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">1.0</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left-align-txt">frame</td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">12</td>
+                            <td class="padding border">1</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">Yes</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">18</td>
+                            <td class="padding border">4</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">1.0</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left-align-txt">rules</td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">12</td>
+                            <td class="padding border">1</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">Yes</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">18</td>
+                            <td class="padding border">4</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">1.0</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left-align-txt">summary</td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">12</td>
+                            <td class="padding border">1</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">Yes</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">18</td>
+                            <td class="padding border">4</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">1.0</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left-align-txt">width</td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">12</td>
+                            <td class="padding border">1</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">Yes</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="bg">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="padding border">1</td>
+                            <td class="padding border">18</td>
+                            <td class="padding border">4</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding border">Yes</td>
+                            <td class="padding">1.0</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+        </table>
     </body>
 </html>
